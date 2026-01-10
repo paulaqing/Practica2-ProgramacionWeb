@@ -21,10 +21,6 @@
 
 ### Funcionalidades Principales
 
-
-
-
-
 #### 👤 **Sistema de Usuarios**
 - Registro y login con autenticación JWT
 - Roles diferenciados: `user` y `admin`
@@ -33,7 +29,7 @@
 
 #### 🛍️ **Gestión de Productos**
 - CRUD completo para administradores
-- Subida de imágenes de productos (Multer)
+- Subida de imágenes de productos 
 - Visualización pública de productos
 - Búsqueda y filtrado
 
@@ -51,7 +47,6 @@
 
 #### 💬 **Chat en Tiempo Real**
 - Comunicación entre usuarios y administradores
-- Usuarios pueden hablar entre sí
 - Historial persistente (últimos 50 mensajes)
 - Salas privadas 1 a 1
 
@@ -472,7 +467,6 @@ if (count > 50) {
 - ✅ Simplicidad: No requiere servicios externos
 - ✅ Control total sobre archivos
 - ✅ Gratis para desarrollo
-- ⚠️ Para producción: Considerar AWS S3, Cloudinary
 
 **Configuración:**
 ```javascript
@@ -495,7 +489,6 @@ const storage = multer.diskStorage({
 - ✅ Menos dependencias
 - ✅ Más control sobre requests
 - ✅ Suficiente para este proyecto
-- ⚠️ Para proyectos grandes: Considerar Apollo Client
 
 ---
 
@@ -506,7 +499,6 @@ const storage = multer.diskStorage({
 **Razones:**
 - ✅ Simplicidad de implementación
 - ✅ Suficiente para sesiones normales
-- ⚠️ Para producción: Implementar refresh tokens
 
 ---
 
@@ -612,8 +604,6 @@ npm start
    - Historial persistente
 
 ### Como Administrador
-
-
 
 1. **Gestionar Productos**
    - Crear productos con imágenes
